@@ -9,12 +9,12 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 32
 
     defaultConfig {
-        applicationId "com.simplemobiletools.dialer"
+        applicationId "com.full.dialer.top.secure.encrypted"
         minSdkVersion 23
-        targetSdkVersion 31
+        targetSdkVersion 32
         versionCode 41
         versionName "5.14.1"
         setProperty("archivesBaseName", "dialer")
@@ -62,7 +62,9 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.SimpleMobileTools:Simple-Commons:4a71789f06'
+    implementation project(':commons')
+   // implementation 'com.github.SimpleMobileTools:Simple-Commons:4a71789f06'
     implementation 'com.github.tibbi:IndicatorFastScroll:4524cd0b61'
     implementation 'me.grantland:autofittextview:0.2.1'
+    implementation "com.fulldive:popups:1.0.9"
 }

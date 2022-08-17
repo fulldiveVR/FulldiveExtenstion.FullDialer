@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Marcador Simple</string>
-    <string name="app_launcher_name">Marcador</string>
+    <string name="app_name">Full Dialer</string>
+    <string name="app_launcher_name">Full Dialer</string>
     <string name="default_phone_app_prompt">Hacer esta app la predeterminada para hacer llamadas en tu dispositivo</string>
     <string name="allow_displaying_over_other_apps">Por favor permita la función \"mostrar sobre otras aplicaciones\" para un compartimiento seguro</string>
     <!-- Contacts -->
