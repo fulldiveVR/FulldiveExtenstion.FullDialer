@@ -5,6 +5,8 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.Menu
+import android.widget.ImageView
+import androidx.core.content.ContextCompat
 import com.simplemobiletools.commons.activities.ManageBlockedNumbersActivity
 import com.simplemobiletools.commons.dialogs.ChangeDateTimeFormatDialog
 import com.simplemobiletools.commons.dialogs.RadioGroupDialog
@@ -58,10 +60,13 @@ class SettingsActivity : SimpleActivity() {
             settings_color_customization_holder,
             settings_general_settings_holder,
             settings_startup_holder,
+            lyt_support,
             settings_calls_holder
         ).forEach {
             it.background.applyColorFilter(getProperBackgroundColor().getContrastColor())
         }
+
+       next_icon.setColorFilter(getProperBackgroundColor().getContrastColor(), android.graphics.PorterDuff.Mode.SRC_IN);
         lyt_support.setOnClickListener {
             DonationManager.purchaseFromSettings(
                 this,

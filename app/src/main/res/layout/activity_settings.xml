@@ -366,18 +366,18 @@
                             style="@style/SettingsTextLabelStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="25dp"
                             android:text="Support Us" />
                         <com.simplemobiletools.commons.views.MyTextView
                             android:layout_below="@id/txtSupportUs"
-                            style="@style/SettingsTextLabelStyle"
+                            style="@style/SettingsTextValueStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Buy fulldive a cup of coffe" />
+                            android:text="Buy Fulldive a cup of coffe" />
 
                     </RelativeLayout>
 
                     <ImageView
+                        android:id="@+id/next_icon"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_gravity="center"
