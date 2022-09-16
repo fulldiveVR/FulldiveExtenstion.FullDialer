@@ -9,7 +9,6 @@ import android.os.Handler
 import androidx.core.net.toUri
 import com.simplemobiletools.commons.R
 import com.simplemobiletools.commons.dialogs.ConfirmationAdvancedDialog
-import com.simplemobiletools.commons.dialogs.RateStarsDialog
 import com.simplemobiletools.commons.extensions.*
 import com.simplemobiletools.commons.helpers.*
 import com.simplemobiletools.commons.models.FAQItem
@@ -160,7 +159,6 @@ class AboutActivity : BaseSimpleActivity() {
                 if (baseConfig.wasAppRated) {
                     redirectToRateUs()
                 } else {
-                    RateStarsDialog(this)
                 }
             } else {
                 baseConfig.wasBeforeRateShown = true

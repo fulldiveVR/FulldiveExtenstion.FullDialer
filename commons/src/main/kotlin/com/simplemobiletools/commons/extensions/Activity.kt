@@ -88,7 +88,6 @@ fun Activity.appLaunched(appId: String) {
 
     if (baseConfig.appRunCount % 40 == 0 && !baseConfig.wasAppRated) {
         if (!resources.getBoolean(R.bool.hide_google_relations)) {
-            RateStarsDialog(this)
         }
     }
 
@@ -100,9 +99,7 @@ fun Activity.appLaunched(appId: String) {
 
 fun Activity.showDonateOrUpgradeDialog() {
     if (getCanAppBeUpgraded()) {
-        UpgradeToProDialog(this)
     } else if (!isOrWasThankYouInstalled()) {
-        DonateDialog(this)
     }
 }
 

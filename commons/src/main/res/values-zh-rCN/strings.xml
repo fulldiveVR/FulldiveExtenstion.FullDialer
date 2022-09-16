@@ -707,8 +707,6 @@
             非常感谢！
         ]]>
     </string>
-    <string name="donate_new">你好，&lt;br&gt;&lt;br&gt;希望您喜欢这个应用程序。它不包含广告，我们也不收集您的数据，要支持它的开发， 请购买 &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank You&lt;/a&gt;. 您将解锁所有的应用功能和颜色自定义。&lt;br&gt;&lt;br&gt;谢谢你！</string>
-    <string name="purchase">购买</string>
     <string name="get_simple_phone">订购 Simple Phone</string>
     <string name="update_thank_you">请更新简单感谢到最新版本</string>
     <string name="before_asking_question_read_faq">提问之前，请先打开应用设置并阅读常见问题。也许您可以在那里找到答案。</string>
@@ -722,7 +720,6 @@
     <string name="thank_you">非常感谢</string>
     <string name="widget_locked_pro">小部件被锁定。
 \n请升级到专业版解锁。</string>
-    <string name="features_locked">此功能被锁，请购买 &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank You&lt;/a&gt; 解锁完整版应用。&lt;br&gt;&lt;br&gt;这是一次性付款，如果您不满意，我们可以退款给您。</string>
     <!-- New app (do not translate anything on the 4th line) -->
     <string name="new_app">嘿，&lt;br&gt;&lt;br&gt;我们最近发布了一些新的应用：&lt;br&gt;&lt;br&gt; &lt;a href=%1$s&gt;%2$s&lt;/a&gt;&lt;br&gt;&lt;br&gt; &lt;a href=%3$s&gt;%4$s&lt;/a&gt;&lt;br&gt;&lt;br&gt; &lt;a href=%5$s&gt;%6$s&lt;/a&gt;&lt;br&gt;&lt;br&gt; 您可以点击标题或图标来下载。&lt;br&gt;&lt;br&gt; 谢谢</string>
     <string name="simple_app_launcher">简单应用启动器</string>
