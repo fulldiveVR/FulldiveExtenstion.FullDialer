@@ -75,5 +75,5 @@ dependencies {
    // implementation 'com.github.SimpleMobileTools:Simple-Commons:4a71789f06'
     implementation 'com.github.tibbi:IndicatorFastScroll:4524cd0b61'
     implementation 'me.grantland:autofittextview:0.2.1'
-    implementation "com.fulldive:popups:1.0.9"
+    implementation "com.fulldive:popups:1.0.13"
 }
