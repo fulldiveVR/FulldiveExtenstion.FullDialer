@@ -19,6 +19,7 @@ import com.full.dialer.top.secure.encrypted.extensions.config
 import com.fulldive.startapppopups.PopupManager
 import com.fulldive.startapppopups.donation.DonationManager
 import kotlinx.android.synthetic.main.activity_settings.*
+import kotlinx.android.synthetic.main.activity_settings.about_privacy_policy_holder
 import java.util.*
 
 class SettingsActivity : SimpleActivity() {
@@ -66,7 +67,7 @@ class SettingsActivity : SimpleActivity() {
             it.background.applyColorFilter(getProperBackgroundColor().getContrastColor())
         }
 
-       next_icon.setColorFilter(getProperBackgroundColor().getContrastColor(), android.graphics.PorterDuff.Mode.SRC_IN);
+        next_icon.setColorFilter(getProperBackgroundColor().getContrastColor(), android.graphics.PorterDuff.Mode.SRC_IN);
         lyt_support.setOnClickListener {
             DonationManager.purchaseFromSettings(
                 this,
@@ -74,7 +75,10 @@ class SettingsActivity : SimpleActivity() {
                     PopupManager().showDonationSuccess(this)
                 }
             )
+        }
 
+        about_privacy_policy_holder.setOnClickListener {
+            launchViewIntent("https://www.fulldive.com/privacy-policy-dialer")
         }
     }
 
@@ -82,7 +86,6 @@ class SettingsActivity : SimpleActivity() {
         updateMenuItemColors(menu)
         return super.onCreateOptionsMenu(menu)
     }
-
 
 
     private fun setupCustomizeColors() {
@@ -95,7 +98,7 @@ class SettingsActivity : SimpleActivity() {
         settings_use_english_holder.beVisibleIf(config.wasUseEnglishToggled || Locale.getDefault().language != "en")
         settings_use_english.isChecked = config.useEnglish
 
-        if (settings_use_english_holder.isGone() ) {
+        if (settings_use_english_holder.isGone()) {
             settings_manage_blocked_numbers_holder.background = resources.getDrawable(R.drawable.ripple_top_corners, theme)
         }
 
