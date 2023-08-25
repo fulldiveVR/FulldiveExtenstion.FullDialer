@@ -15,14 +15,14 @@
         android:name="android.hardware.screen.portrait"
         android:required="false" />
 
-    <uses-permission
-        android:name="android.permission.USE_BIOMETRIC"
-        tools:node="remove" />
+<!--    <uses-permission-->
+<!--        android:name="android.permission.USE_BIOMETRIC"-->
+<!--        tools:node="remove" />-->
 
     <!-- used by Reprint -->
-    <uses-permission
-        android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"
-        tools:node="remove" />
+<!--    <uses-permission-->
+<!--        android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"-->
+<!--        tools:node="remove" />-->
 
     <application android:supportsRtl="true">
         <activity
