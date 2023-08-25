@@ -1,10 +1,14 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-parcelize'
 apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion propCompileSdkVersion
+
+    if (project.android.hasProperty("namespace")) {
+        namespace("com.full.dialer.top.secure.encrypted.namespace")
+    }
 
     defaultConfig {
         minSdkVersion propMinSdkVersion

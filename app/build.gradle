@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-parcelize'
 
 def keystorePropertiesFile = rootProject.file("keystore.properties")
 def keystoreProperties = new Properties()
@@ -15,6 +15,10 @@ def versionPatch = 2
 android {
     compileSdkVersion 33
     buildToolsVersion '33.0.2'
+
+    if (project.android.hasProperty("namespace")) {
+        namespace("com.full.dialer.top.secure.encrypted.namespace")
+    }
 
     defaultConfig {
         applicationId "com.full.dialer.top.secure.encrypted"
